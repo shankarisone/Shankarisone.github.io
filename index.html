@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shankar Tamata</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #f2f2f2, #e0f7fa);
+            color: #333;
+        }
+        header {
+            background-color: #00838f;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        section {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        img {
+            display: block;
+            max-width: 200px;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+        }
+        .contact-info {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .contact-info p {
+            margin: 0.5rem 0;
+        }
+        .form-container {
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        input, textarea {
+            padding: 0.8rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        button {
+            padding: 0.8rem;
+            background-color: #00838f;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #006064;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shankar Tamata</h1>
+        <p>Welcome to my personal website</p>
+    </header>
+    <section>
+        <img src="your-photo.jpg" alt="Shankar Tamata Photo" />
+        <div class="contact-info">
+            <p><strong>Phone (NTC):</strong> 9866847116</p>
+            <p><strong>Phone (Ncell):</strong> 9806478390</p>
+            <p><strong>Email:</strong> <a href="mailto:shankartamata123@gmail.com">shankartamata123@gmail.com</a></p>
+            <p><strong>Facebook:</strong> <a href="https://facebook.com/shankar.tamata.1" target="_blank">shankar.tamata.1</a></p>
+        </div>
+        <div class="form-container">
+            <h2>Send Me a Message</h2>
+            <form action="https://formspree.io/f/xwkgqgpl" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="email" name="email" placeholder="Your Email" required />
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
