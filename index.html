@@ -1,97 +1,94 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ne">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shankar Tamata</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(to right, #f2f2f2, #e0f7fa);
-            color: #333;
-        }
-        header {
-            background-color: #00838f;
-            color: white;
-            padding: 2rem 1rem;
-            text-align: center;
-        }
-        section {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 1rem;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            border-radius: 8px;
-        }
-        img {
-            display: block;
-            max-width: 200px;
-            border-radius: 50%;
-            margin: 0 auto 1rem;
-        }
-        .contact-info {
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-        .contact-info p {
-            margin: 0.5rem 0;
-        }
-        .form-container {
-            text-align: center;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            max-width: 400px;
-            margin: 0 auto;
-        }
-        input, textarea {
-            padding: 0.8rem;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 1rem;
-        }
-        button {
-            padding: 0.8rem;
-            background-color: #00838f;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            font-size: 1rem;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #006064;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>मेरो Personal Profile</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: #ffffff;
+      background-image: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 30px;
+      text-align: center;
+    }
+
+    img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    form {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    input[type="submit"] {
+      background-color: #00bcd4;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #008c9e;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #ccc;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Shankar Tamata</h1>
-        <p>Welcome to my personal website</p>
-    </header>
-    <section>
-        <img src="your-photo.jpg" alt="Shankar Tamata Photo" />
-        <div class="contact-info">
-            <p><strong>Phone (NTC):</strong> 9866847116</p>
-            <p><strong>Phone (Ncell):</strong> 9806478390</p>
-            <p><strong>Email:</strong> <a href="mailto:shankartamata123@gmail.com">shankartamata123@gmail.com</a></p>
-            <p><strong>Facebook:</strong> <a href="https://facebook.com/shankar.tamata.1" target="_blank">shankar.tamata.1</a></p>
-        </div>
-        <div class="form-container">
-            <h2>Send Me a Message</h2>
-            <form action="https://formspree.io/f/xwkgqgpl" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required />
-                <input type="email" name="email" placeholder="Your Email" required />
-                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-    </section>
+  <div class="container">
+    <img src="profile.jpg" alt="मेरो फोटो" />
+    <h1>शंकर तामाङ</h1>
+    <p>यो मेरो व्यक्तिगत profile webpage हो जहाँ तपाईं मलाई सम्पर्क गर्न सक्नुहुन्छ।</p>
+
+    <form action="#" method="POST">
+      <input type="text" name="name" placeholder="तपाईंको नाम" required />
+      <input type="email" name="email" placeholder="तपाईंको इमेल" required />
+      <textarea name="message" rows="5" placeholder="तपाईंको सन्देश" required></textarea>
+      <input type="submit" value="सन्देश पठाउनुहोस्" />
+    </form>
+
+    <footer>
+      &copy; 2025 शंकर तामाङ | सबै अधिकार सुरक्षित
+    </footer>
+  </div>
 </body>
 </html>
